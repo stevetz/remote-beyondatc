@@ -115,3 +115,7 @@ https://docs.flightsimulator.com/html/Programming_Tools/SimConnect/SimConnect_SD
   ```
   mklink /D "C:\dir\to\your\Community24" "\\MSFS_PC\Community24"
   ```
+
+# Bonus
+
+I have also detailed my networked audio and PTT setup using Voicemeeter, [here](AUDIOPTT.md).
