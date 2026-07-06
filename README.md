@@ -75,26 +75,27 @@ https://docs.flightsimulator.com/html/Programming_Tools/SimConnect/SimConnect_SD
 2. Find the Static IPV4 port section, and change to:
   ```
     <SimConnect.Comm>
-    <Descr>Static IP4 port</Descr>
-    <Protocol>IPv4</Protocol>
-    <Scope>global</Scope>
-	<Address>LOCAL_IP_ADDRESS_OF_THE_MSFS_PC</Address>
-    <Port>500</Port>
-    <MaxClients>256</MaxClients>
-    <MaxRecvSize>41088</MaxRecvSize>
-  </SimConnect.Comm> 
+      <Descr>Static IP4 port</Descr>
+      <Protocol>IPv4</Protocol>
+      <Scope>global</Scope>
+	  <Address>LOCAL_IP_ADDRESS_OF_THE_MSFS_PC</Address>
+      <Port>500</Port>
+      <MaxClients>256</MaxClients>
+      <MaxRecvSize>41088</MaxRecvSize>
+    </SimConnect.Comm> 
+  ```
 
 ## On the BATC PC
 
 > You'll need to re-do this step after every BATC update.
 
 1. Create the file `SimConnect.cfg` in the BATC Folder, default install directory is `C:\BeyondATC`:
-```
-[SimConnect]
-Protocol=IPv4
-Address=LOCAL_IP_ADDRESS_OF_THE_MSFS_PC
-Port=500
-```
+  ```
+  [SimConnect]
+  Protocol=IPv4
+  Address=LOCAL_IP_ADDRESS_OF_THE_MSFS_PC
+  Port=500
+  ```
 2. A copy of this file also needs to be made at `C:\BeyondATC\BeyondATC_Data\StreamingAssets`
 
 ---
@@ -103,6 +104,6 @@ Port=500
 
 1. Share the Community folder over the LAN. Windows NFS - google it - out of scope of this tutorial
 2. Assume it is at `C:\dir\to\your\Community24` on the MSFS PC, and shared at `\\MSFS_PC\Community24` on the BATC PC. This needs symlinking to the same directory as the MSFS PC. In Command Prompt:
-```
-mklink /D "C:\dir\to\your\Community24" "\\MSFS_PC\Community24"
-```
+  ```
+  mklink /D "C:\dir\to\your\Community24" "\\MSFS_PC\Community24"
+  ```
