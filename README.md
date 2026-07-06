@@ -21,9 +21,10 @@ Run BeyondATC on a second PC. I wrote this up after finding tidbits of informati
 
 # MSFS 2024 Spoofer
 
-A minimal Windows executable that idles indefinitely under the process name `FlightSimulator2024.exe`. Used for tricking BATC, which checks for a running MSFS 2024 instance before it will start. This may work with MSFS 2020 (rename to `FlightSimulator.exe`), I've not tested this.
+A minimal Windows executable that idles indefinitely under the process name `FlightSimulator2024.exe`. Used for tricking BATC, which checks for a running MSFS 2024 instance before it will start.
+>This may work with MSFS 2020, rename to `FlightSimulator.exe`. I've not tested this.
 
-The process uses zero CPU (blocked on `Sleep(INFINITE)`) and a few MB of RAM.
+The process uses zero CPU, blocked on `Sleep(INFINITE)`, and just a few MB of RAM.
 
 ## Files
 
@@ -36,7 +37,8 @@ Download `FlightSimulator2024.exe` and run it on the BATC/second PC. It will app
 
 ## Building it
 
-Two options here, I used Visual Studio:
+If you'd prefer not to run a random person's executable then there are two options here to build yourself from source. I used Visual Studio.
+- Download (and inspect if you wish) `stub.c`
 
 ### Option A - Visual Studio
 
@@ -56,24 +58,22 @@ You need the **Desktop development with C++** workload installed.
 ### Option B - Tiny C Compiler
 
 TCC should also work, it is a very small download with no installer:
-1. Download from https://repo.or.cz/tinycc.git or mirrored on github at https://github.com/Tiny-C-Compiler/tinycc-mirror-repository
+1. Download and install from https://repo.or.cz/tinycc.git or mirrored on github at https://github.com/Tiny-C-Compiler/tinycc-mirror-repository
 2. From a command prompt in the folder containing `stub.c`:
    ```
    tcc -Wl,-subsystem=windows stub.c -o FlightSimulator2024.exe
    ```
 
-## Running it
+## Running & Stopping it
 
 No admin needed, just run it. The process has no window and no tray icon. As it uses basically no resources I have it run on system startup.
-
-## Stopping it
 
 If needed you can end it from Task Manager.
 
 ---
 # SimConnect
 
-https://docs.flightsimulator.com/html/Programming_Tools/SimConnect/SimConnect_SDK.htm
+Some config needed on both PCs. Microsoft documentation on SimConnect for reference: https://docs.flightsimulator.com/html/Programming_Tools/SimConnect/SimConnect_SDK.htm
 
 ## On the MSFS PC
 
@@ -97,7 +97,7 @@ https://docs.flightsimulator.com/html/Programming_Tools/SimConnect/SimConnect_SD
 
 > You'll need to re-do this step after every BATC update.
 
-1. Create the file `SimConnect.cfg` in the BATC Folder, default install directory is `C:\BeyondATC`:
+1. Create the file `SimConnect.cfg` in the BATC Folder (or download from the repo), default install directory is `C:\BeyondATC`:
   ```
   [SimConnect]
   Protocol=IPv4
