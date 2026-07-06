@@ -1,5 +1,6 @@
 # remote-beyondatc
-Run BeyondATC on a second PC.
+Run BeyondATC on a second PC. I wrote this up after finding tidbits of information and a little while trying to get this to work. The devs rightfully do not want to assist as this may imply ongoing support. Have a go:
+
 1. You'll need a [spoofed Flight Simulator executable](#MSFS-2024-Spoofer), as BATC checks for this on startup.
 2. You need to [set up SimConnect to work over the network](#SimConnect).
 3. You need the traffic models [available on the second PC](#Traffic-Models), accessible on the same path as on the MSFS PC.
@@ -7,7 +8,10 @@ Run BeyondATC on a second PC.
 > Tested working on BATC version 1.8.14.EA and MSFS 2024 SU5.1
 
 > [!Warning]
-> BATC do not support running their application on a second PC, they have made it very clear they will not offer any support - so your milage may vary - especially as the applicatioon is changing regularly in early access
+> BATC do not support running their application on a second PC, they have made it very clear they will not offer any help at all so this is all at your own risk/enjoyment.
+> Please don't go to the devs with problems!
+> Your milage may vary - especially as the application is changing regularly in early access. You have been warned...
+
 
 ---
 
