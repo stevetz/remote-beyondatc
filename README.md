@@ -97,7 +97,7 @@ Some config needed on both PCs. Microsoft documentation on SimConnect for refere
 
 > You'll need to re-do this step after every BATC update.
 
-1. Create the file `SimConnect.cfg` in the BATC Folder (or download from the repo), default install directory is `C:\BeyondATC`:
+1. Create the file `SimConnect.cfg` in the BATC Folder (or download from the repo and update the IP address), default install directory is `C:\BeyondATC`:
   ```
   [SimConnect]
   Protocol=IPv4
