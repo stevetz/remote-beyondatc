@@ -116,6 +116,10 @@ Some config needed on both PCs. Microsoft documentation on SimConnect for refere
   mklink /D "C:\dir\to\your\Community24" "\\MSFS_PC\Community24"
   ```
 
+> From initial testing, and report from another person, network-accessed models might cause flight loading delay stuck at `80% - Reticulating Splines`, while I enjoy the joke, loading a new flight has inconsistently stuck here for 5+ mins.
+>
+> One possible fix for this is removing the symlink `rmdir` and simply downloading/copying the flight models onto the local disk to the same directory tree as on the sim pc. I'll update as more testing - I'd welcome issuees confirming or otherwise this fix.
+
 # Bonus
 
 I have also detailed my networked audio and PTT setup using Voicemeeter, [here](AUDIOPTT.md).
