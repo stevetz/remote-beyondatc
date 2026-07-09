@@ -2,7 +2,7 @@
 
 This is my setup to allow [two-way networked audio](#networked-audio) and a [PTT trigger](#ptt-trigger) from the MSFS PC and the BATC PC.
 
-> For more seamless use, youu could also use [Mouse Without Borders](https://www.microsoft.com/en-in/download/details.aspx?id=35460) or [Input Leap](https://github.com/input-leap/input-leap) for full mouse & keyboard from the sim pc.
+> For more seamless use, you could also use [Mouse Without Borders](https://www.microsoft.com/en-in/download/details.aspx?id=35460) or [Input Leap](https://github.com/input-leap/input-leap) for full mouse & keyboard from the sim pc.
 
 # Networked Audio
 
